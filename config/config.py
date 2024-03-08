@@ -106,7 +106,7 @@ class Config:
     if SAVE_TO_DATABASE:
         MONGODB_URI = environ.get("MONGODB_URI","mongodb+srv://NEWMULTI24BOT:NEWMULTI24BOT@cluster0.vcgihkj.mongodb.net/?retryWrites=true&w=majority")
         COLLECTION_NAME = "USER_DATA"
-        SAVE_ID = "Nik66"
+        SAVE_ID = "Sunrises24BotUpdates"
         DATA = eval(get_mongo_data(MONGODB_URI, NAME, SAVE_ID, COLLECTION_NAME))
     else:
         LOGGER.info("🔶Not Using MongoDB Database")
