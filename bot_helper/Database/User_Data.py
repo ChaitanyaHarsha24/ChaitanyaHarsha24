@@ -115,7 +115,7 @@ async def new_user(user_id, dbsave):
         DATA[user_id]['convert']['convert_list'] = [720, 480]
         DATA[user_id]['custom_name'] = False
         DATA[user_id]['custom_metadata'] = False
-        DATA[user_id]['metadata'] = "Nik66Bots"
+        DATA[user_id]['metadata'] = "Sunrises24BotUpdates"
         DATA[user_id]['detailed_messages'] = True
         DATA[user_id]['show_stats'] = True
         DATA[user_id]['show_botuptime'] = True
