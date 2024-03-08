@@ -144,7 +144,7 @@ async def callback(event):
         
         
         elif txt=="nik66bots":
-            await event.answer(f"⚡Bot By Sahil⚡", alert=True)
+            await event.answer(f"❤️ Bᴏᴛ Bʏ Sᴜɴʀɪꜱᴇꜱ𝟸𝟺BᴏᴛUᴘᴅᴀᴛᴇꜱ ❤️", alert=True)
             return
         
         
@@ -260,10 +260,10 @@ async def telegram_callback(event, txt, user_id, chat_id):
             telegram_upload = get_data()[user_id]['tgupload']
             telegram_download = get_data()[user_id]['tgdownload']
             KeyBoard = []
-            KeyBoard.append([Button.inline(f'🔼Telegram Upload Client - {str(telegram_upload)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🔼Telegram Upload Client - {str(telegram_upload)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(["Telethon", "Pyrogram"], telegram_upload, "telegramupload", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🔽Telegram Download Client - {str(telegram_download)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🔽Telegram Download Client - {str(telegram_download)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(["Telethon", "Pyrogram"], telegram_download, "telegramdownload", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -353,49 +353,49 @@ async def general_callback(event, txt, user_id, chat_id):
             upload_all = get_data()[user_id]['upload_all']
             # rclone = get_data()[user_id]['rclone']
             KeyBoard = []
-            KeyBoard.append([Button.inline(f'🥝Auto Select Audio - {str(select_stream)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🥝Auto Select Audio - {str(select_stream)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, select_stream, "generalselectstream", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍭Select Audio - {str(stream)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍭Select Audio - {str(stream)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(['ENG', 'HIN'], stream, "generalstream", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🪓Split Video - {str(split_video)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🪓Split Video - {str(split_video)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, split_video, "generalsplitvideo", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🛢Split Size - {str(split)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🛢Split Size - {str(split)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(['2GB', '4GB'], split, "generalsplit", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🖼Dynamic Thumbnail - {str(custom_thumbnail)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🖼Dynamic Thumbnail - {str(custom_thumbnail)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, custom_thumbnail, "generalcustomthumbnail", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'🪀Custom Metadata - {str(custom_metadata)} [Click To See]', 'custom_metedata')])
             for board in gen_keyboard(bool_list, custom_metadata, "generalcustommetadata", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🧵Upload On TG - {str(upload_tg)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🧵Upload On TG - {str(upload_tg)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, upload_tg, "generaluploadtg", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🕹Auto Upload Big File To Drive - {str(auto_drive)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🕹Auto Upload Big File To Drive - {str(auto_drive)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, auto_drive, "generalautodrive", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📷Generate Screenshots - {str(gen_ss)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📷Generate Screenshots - {str(gen_ss)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, gen_ss, "generalgenss", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🎶No Of Screenshots - {str(ss_no)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎶No Of Screenshots - {str(ss_no)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard([3,5,7,10], ss_no, "generalssno", 4, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🎞Generate Sample Video - {str(gen_sample)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎞Generate Sample Video - {str(gen_sample)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, gen_sample, "generalgensample", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🛰Multi Tasks - {str(multi_tasks)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🛰Multi Tasks - {str(multi_tasks)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, multi_tasks, "generalmultitasks", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⏹Upload Every Multi Task File - {str(upload_all)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⏹Upload Every Multi Task File - {str(upload_all)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, upload_all, "generaluploadall", 2, False):
                 KeyBoard.append(board)
             if check_config:
                 accounts = await get_config(r_config)
                 if accounts:
-                    KeyBoard.append([Button.inline(f'🔮Rclone Account - {str(drive_name)}', 'nik66bots')])
+                    KeyBoard.append([Button.inline(f'🔮Rclone Account - {str(drive_name)}', 'Sunrises24BotUpdates')])
                     for board in gen_keyboard(accounts, drive_name, "generaldrivename", 2, False):
                         KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -436,22 +436,22 @@ async def progress_callback(event, txt, user_id):
             ffmpeg_size = get_data()[user_id]['ffmpeg_size']
             ffmpeg_ptime = get_data()[user_id]['ffmpeg_ptime']
             show_time = get_data()[user_id]['show_time']
-            KeyBoard.append([Button.inline(f'📋Show Detailed Messages - {str(detailed_messages)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📋Show Detailed Messages - {str(detailed_messages)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, detailed_messages, "progressdetailedprogress", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📊Show Stats - {str(show_stats)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📊Show Stats - {str(show_stats)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, show_stats, "progressshowstats", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📀Show FFMPEG Output File Size - {str(ffmpeg_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📀Show FFMPEG Output File Size - {str(ffmpeg_size)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, ffmpeg_size, "progressffmpegsize", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⏲Show Process Time- {str(ffmpeg_ptime)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⏲Show Process Time- {str(ffmpeg_ptime)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, ffmpeg_ptime, "progressffmpegptime", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⌚Show Current Time- {str(show_time)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⌚Show Current Time- {str(show_time)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, show_time, "progressshowtime", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⏱Progress Update Time - {str(update_time)} secs', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⏱Progress Update Time - {str(update_time)} secs', 'Sunrises24BotUpdates')])
             for board in gen_keyboard([5, 6, 7, 8, 9, 10], update_time, "progressupdatetime", 3, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -494,27 +494,27 @@ async def compress_callback(event, txt, user_id, edit):
             compress_use_queue_size = get_data()[user_id]['compress']['use_queue_size']
             compress_queue_size = get_data()[user_id]['compress']['queue_size']
             compress_sync = get_data()[user_id]['compress']['sync']
-            KeyBoard.append([Button.inline(f'🍬Encoder - {str(compress_encoder)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍬Encoder - {str(compress_encoder)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(encoders_list, compress_encoder, "compressionencoder", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(compress_copysub)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(compress_copysub)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, compress_copysub, "compressioncopysub", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍓Map  - {str(compress_map)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍓Map  - {str(compress_map)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, compress_map, "compressionmap", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(compress_use_queue_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(compress_use_queue_size)}', 'Sunrises24BotUpdates')])
             if compress_use_queue_size:
                 KeyBoard.append([Button.inline(f'🎹FFMPEG Queue Size Value  - {str(compress_queue_size)} (Click To Change)', 'change_compress_queue_size')])
             for board in gen_keyboard(bool_list, compress_use_queue_size, "compressionusequeuesize", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(compress_sync)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(compress_sync)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, compress_sync, "compressionsync", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'♒Preset - {str(compress_preset)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'♒Preset - {str(compress_preset)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(presets_list, compress_preset, "compressionpreset", 3, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⚡CRF  - {str(compress_crf)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⚡CRF  - {str(compress_crf)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(crf_list, compress_crf, "compressioncrf", 6, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -576,36 +576,36 @@ async def watermark_callback(event, txt, user_id, edit):
             watermark_use_queue_size = get_data()[user_id]['watermark']['use_queue_size']
             watermark_queue_size = get_data()[user_id]['watermark']['queue_size']
             watermark_sync = get_data()[user_id]['watermark']['sync']
-            KeyBoard.append([Button.inline(f'🥽Position - {str(ws_name[watermark_position])}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🥽Position - {str(ws_name[watermark_position])}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(list(ws_name.keys()), watermark_position, "watermarkposition", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🛸Size - {str(watermark_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🛸Size - {str(watermark_size)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(wsize_list, watermark_size, "watermarksize", 6, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(watermark_encode)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(watermark_encode)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, watermark_encode, "watermarkencode", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍬Encoder - {str(watermark_encoder)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍬Encoder - {str(watermark_encoder)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(encoders_list, watermark_encoder, "watermarkencoder", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(watermark_copysub)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(watermark_copysub)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, watermark_copysub, "watermarkcopysub", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍓Map  - {str(watermark_map)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍓Map  - {str(watermark_map)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, watermark_map, "watermarkmap", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(watermark_use_queue_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(watermark_use_queue_size)}', 'Sunrises24BotUpdates')])
             if watermark_use_queue_size:
                 KeyBoard.append([Button.inline(f'🎹FFMPEG Queue Size Value  - {str(watermark_queue_size)} (Click To Change)', 'change_watermark_queue_size')])
             for board in gen_keyboard(bool_list, watermark_use_queue_size, "watermarkusequeuesize", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(watermark_sync)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(watermark_sync)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, watermark_sync, "watermarksync", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'♒Preset - {str(watermark_preset)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'♒Preset - {str(watermark_preset)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(presets_list, watermark_preset, "watermarkpreset", 3, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⚡CRF  - {str(watermark_crf)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⚡CRF  - {str(watermark_crf)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(crf_list, watermark_crf, "watermarkcrf", 6, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -635,7 +635,7 @@ async def merge_callback(event, txt, user_id):
                 await event.answer(f"✅Merge Fix Blank - {str(new_position)}")
             merge_map = get_data()[user_id]['merge']['map']
             merge_fix_blank = get_data()[user_id]['merge']['fix_blank']
-            KeyBoard.append([Button.inline(f'🍓Map  - {str(merge_map)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍓Map  - {str(merge_map)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, merge_map, "mergemap", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'🚢Fix Blank Outro  - {str(merge_fix_blank)} [Use Only When Necessary]', 'nik66bots')])
@@ -689,33 +689,33 @@ async def convert_callback(event, txt, user_id, edit):
             convert_queue_size = get_data()[user_id]['convert']['queue_size']
             convert_sync = get_data()[user_id]['convert']['sync']
             convert_list = get_data()[user_id]['convert']['convert_list']
-            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(convert_encode)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(convert_encode)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, convert_encode, "convertencode", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍬Encoder - {str(convert_encoder)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍬Encoder - {str(convert_encoder)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(encoders_list, convert_encoder, "convertencoder", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(convert_copysub)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍄Copy Subtitles - {str(convert_copysub)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, convert_copysub, "convertcopysub", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍓Map  - {str(convert_map)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍓Map  - {str(convert_map)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, convert_map, "convertmap", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(convert_use_queue_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(convert_use_queue_size)}', 'Sunrises24BotUpdates')])
             if convert_use_queue_size:
                 KeyBoard.append([Button.inline(f'🎹FFMPEG Queue Size Value  - {str(convert_queue_size)} (Click To Change)', 'change_convert_queue_size')])
             for board in gen_keyboard(bool_list, convert_use_queue_size, "convertusequeuesize", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(convert_sync)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(convert_sync)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, convert_sync, "convertsync", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🎴Convert Qualities - {str(convert_list)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎴Convert Qualities - {str(convert_list)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard([[720, 480],[720], [480]], convert_list, "convertlist", 3, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'♒Preset - {str(convert_preset)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'♒Preset - {str(convert_preset)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(presets_list, convert_preset, "convertpreset", 3, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⚡CRF  - {str(convert_crf)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⚡CRF  - {str(convert_crf)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(crf_list, convert_crf, "convertcrf", 6, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -761,24 +761,24 @@ async def hardmux_callback(event, txt, user_id, edit):
             hardmux_use_queue_size = get_data()[user_id]['hardmux']['use_queue_size']
             hardmux_queue_size = get_data()[user_id]['hardmux']['queue_size']
             hardmux_sync = get_data()[user_id]['hardmux']['sync']
-            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(hardmux_encode_video)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🎧Use Encoder - {str(hardmux_encode_video)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, hardmux_encode_video, "hardmuxencodevideo", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🍬Encoder - {str(hardmux_encoder)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍬Encoder - {str(hardmux_encoder)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(encoders_list, hardmux_encoder, "hardmuxencoder", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(hardmux_use_queue_size)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'📻Use FFMPEG Queue Size  - {str(hardmux_use_queue_size)}', 'Sunrises24BotUpdates')])
             if hardmux_use_queue_size:
                 KeyBoard.append([Button.inline(f'🎹FFMPEG Queue Size Value  - {str(hardmux_queue_size)} (Click To Change)', 'change_hardmux_queue_size')])
             for board in gen_keyboard(bool_list, hardmux_use_queue_size, "hardmuxusequeuesize", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(hardmux_sync)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🌳Use SYNC - {str(hardmux_sync)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, hardmux_sync, "hardmuxsync", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'♒Preset - {str(hardmux_preset)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'♒Preset - {str(hardmux_preset)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(presets_list, hardmux_preset, "hardmuxpreset", 3, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'⚡CRF  - {str(hardmux_crf)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'⚡CRF  - {str(hardmux_crf)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(crf_list, hardmux_crf, "hardmuxcrf", 6, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -804,7 +804,7 @@ async def softmux_callback(event, txt, user_id, edit):
                 await saveconfig(user_id, 'softmux', 'sub_codec', new_position, SAVE_TO_DATABASE)
                 await event.answer(f"✅Softmux Sub Codec - {str(new_position)}")
             softmux_sub_codec = get_data()[user_id]['softmux']['sub_codec']
-            KeyBoard.append([Button.inline(f'🍄Subtitles Codec - {str(softmux_sub_codec)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍄Subtitles Codec - {str(softmux_sub_codec)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(['copy', 'mov_text'], softmux_sub_codec, "softmuxsubcodec", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -830,7 +830,7 @@ async def softremux_callback(event, txt, user_id, edit):
                 await saveconfig(user_id, 'softremux', 'sub_codec', new_position, SAVE_TO_DATABASE)
                 await event.answer(f"✅Softremux Sub Codec - {str(new_position)}")
             softremux_sub_codec = get_data()[user_id]['softremux']['sub_codec']
-            KeyBoard.append([Button.inline(f'🍄Subtitles Codec - {str(softremux_sub_codec)}', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🍄Subtitles Codec - {str(softremux_sub_codec)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(['copy', 'mov_text'], softremux_sub_codec, "softremuxsubcodec", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
