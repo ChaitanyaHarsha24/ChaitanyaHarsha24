@@ -229,7 +229,7 @@ def get_commands(process_status):
                 command+= ["-c:s", "copy"]
             if convert_encode:
                 if convert_encoder=='libx265':
-                        command+= ['-vcodec','libx265','-vtag', 'hvc1']
+                        command+= ['-vcodec', 'libx265', '-pix_fmt', 'yuv420p10le', '-tag:v', 'hvc1']
                 else:
                         command+= ['-vcodec','libx264']
             else:
