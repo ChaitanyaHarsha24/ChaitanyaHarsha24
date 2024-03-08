@@ -143,7 +143,7 @@ async def callback(event):
             return
         
         
-        elif txt=="nik66bots":
+        elif txt=="Sunrises24BotUpdates":
             await event.answer(f"❤️ Bᴏᴛ Bʏ Sᴜɴʀɪꜱᴇꜱ𝟸𝟺BᴏᴛUᴘᴅᴀᴛᴇꜱ ❤️", alert=True)
             return
         
@@ -638,7 +638,7 @@ async def merge_callback(event, txt, user_id):
             KeyBoard.append([Button.inline(f'🍓Map  - {str(merge_map)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, merge_map, "mergemap", 2, False):
                 KeyBoard.append(board)
-            KeyBoard.append([Button.inline(f'🚢Fix Blank Outro  - {str(merge_fix_blank)} [Use Only When Necessary]', 'nik66bots')])
+            KeyBoard.append([Button.inline(f'🚢Fix Blank Outro  - {str(merge_fix_blank)} [Use Only When Necessary]', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(bool_list, merge_fix_blank, "mergefixblank", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'↩Back', 'settings')])
@@ -710,7 +710,7 @@ async def convert_callback(event, txt, user_id, edit):
             for board in gen_keyboard(bool_list, convert_sync, "convertsync", 2, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'🎴Convert Qualities - {str(convert_list)}', 'Sunrises24BotUpdates')])
-            for board in gen_keyboard([[720, 480],[720], [480]], convert_list, "convertlist", 3, False):
+            for board in gen_keyboard([[720, 480], [1080], [720], [576], [480], [360]], convert_list, "convertlist", 3, False):
                 KeyBoard.append(board)
             KeyBoard.append([Button.inline(f'♒Preset - {str(convert_preset)}', 'Sunrises24BotUpdates')])
             for board in gen_keyboard(presets_list, convert_preset, "convertpreset", 3, False):
