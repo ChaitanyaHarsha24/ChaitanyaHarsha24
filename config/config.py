@@ -85,7 +85,7 @@ class Config:
     USE_PYROGRAM = True
     USE_SESSION_STRING = environ.get("USE_SESSION_STRING", False)
     SESSION_STRING = environ.get("SESSION_STRING","")
-    RUNNING_TASK_LIMIT = int(environ.get("RUNNING_TASK_LIMIT",""))
+    RUNNING_TASK_LIMIT = int(environ.get("RUNNING_TASK_LIMIT","10"))
     AUTO_SET_BOT_CMDS = eval(environ.get("AUTO_SET_BOT_CMDS","False"))
     HEROKU_APP_NAME = environ.get("HEROKU_APP_NAME", False)
     HEROKU_API_KEY = environ.get("HEROKU_API_KEY", False)
