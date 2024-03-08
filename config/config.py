@@ -74,14 +74,14 @@ def get_mongo_data(MONGODB_URI, BOT_USERNAME, id, colz):
 class Config:
     VERSION = '3.0'
     try:
-        API_ID = int(environ.get("API_ID",""))
+        API_ID = int(environ.get("API_ID","10811400"))
     except:
         LOGGER.info("🔶Invalid Config")
         if exists('./userdata/botconfig.env'):
             remove('./userdata/botconfig.env')
         exit()
-    API_HASH = environ.get("API_HASH","")
-    TOKEN = environ.get("TOKEN","")
+    API_HASH = environ.get("API_HASH","191bf5ae7a6c39771e7b13cf4ffd1279")
+    TOKEN = environ.get("TOKEN","6570881117:AAF3ulbA0ztNfF1rSdp7cb5nZ_4hzIDAm5U")
     USE_PYROGRAM = True
     USE_SESSION_STRING = environ.get("USE_SESSION_STRING", False)
     SESSION_STRING = environ.get("SESSION_STRING","")
@@ -93,18 +93,18 @@ class Config:
     UNFINISHED_PROGRESS_STR = environ.get("UNFINISHED_PROGRESS_STR", '□')
     TIMEZONE = environ.get("TIMEZONE", 'Asia/Kolkata')
     try:
-        AUTH_GROUP_ID = int(environ.get("AUTH_GROUP_ID",""))
+        AUTH_GROUP_ID = int(environ.get("AUTH_GROUP_ID","-1001913031994"))
     except:
         LOGGER.info("🔶Auth Group ID Not Found, Pyrogram Download and Upload Will Not Work In Group")
         AUTH_GROUP_ID = False
     NAME = "Nik66Bots"
     DOWNLOAD_DIR = f"{getcwd()}/downloads"
-    OWNER_ID = int(environ.get("OWNER_ID",""))
-    SUDO_USERS = [int(x) for x in environ.get("SUDO_USERS","").split(" ")]
+    OWNER_ID = int(environ.get("OWNER_ID","6469754522"))
+    SUDO_USERS = [int(x) for x in environ.get("SUDO_USERS","6469754522").split(" ")]
     ALLOWED_CHATS = SUDO_USERS.copy()
     SAVE_TO_DATABASE = eval(environ.get("SAVE_TO_DATABASE",""))
     if SAVE_TO_DATABASE:
-        MONGODB_URI = environ.get("MONGODB_URI","")
+        MONGODB_URI = environ.get("MONGODB_URI","mongodb+srv://NEWMULTI24BOT:NEWMULTI24BOT@cluster0.vcgihkj.mongodb.net/?retryWrites=true&w=majority")
         COLLECTION_NAME = "USER_DATA"
         SAVE_ID = "Nik66"
         DATA = eval(get_mongo_data(MONGODB_URI, NAME, SAVE_ID, COLLECTION_NAME))
@@ -113,7 +113,7 @@ class Config:
         DATA = {}
     LOGGER = LOGGER
     try:
-        RESTART_NOTIFY_ID = int(environ.get("RESTART_NOTIFY_ID",""))
+        RESTART_NOTIFY_ID = int(environ.get("RESTART_NOTIFY_ID","-1001534512063"))
         LOGGER.info("🔶Restart Notification ID Found")
     except:
         RESTART_NOTIFY_ID = False
