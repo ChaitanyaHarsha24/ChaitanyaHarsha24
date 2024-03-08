@@ -102,7 +102,7 @@ class Config:
     OWNER_ID = int(environ.get("OWNER_ID","6469754522"))
     SUDO_USERS = [int(x) for x in environ.get("SUDO_USERS","6469754522").split(" ")]
     ALLOWED_CHATS = SUDO_USERS.copy()
-    SAVE_TO_DATABASE = eval(environ.get("SAVE_TO_DATABASE",""))
+    SAVE_TO_DATABASE = eval(environ.get("SAVE_TO_DATABASE","True"))
     if SAVE_TO_DATABASE:
         MONGODB_URI = environ.get("MONGODB_URI","mongodb+srv://NEWMULTI24BOT:NEWMULTI24BOT@cluster0.vcgihkj.mongodb.net/?retryWrites=true&w=majority")
         COLLECTION_NAME = "USER_DATA"
