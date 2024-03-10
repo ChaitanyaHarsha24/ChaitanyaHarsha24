@@ -97,7 +97,7 @@ class Config:
     except:
         LOGGER.info("🔶Auth Group ID Not Found, Pyrogram Download and Upload Will Not Work In Group")
         AUTH_GROUP_ID = False
-    NAME = "Nik66Bots"
+    NAME = "Sunrises24BotUpdates"
     DOWNLOAD_DIR = f"{getcwd()}/downloads"
     OWNER_ID = int(environ.get("OWNER_ID",""))
     SUDO_USERS = [int(x) for x in environ.get("SUDO_USERS","").split(" ")]
@@ -106,7 +106,7 @@ class Config:
     if SAVE_TO_DATABASE:
         MONGODB_URI = environ.get("MONGODB_URI","")
         COLLECTION_NAME = "USER_DATA"
-        SAVE_ID = "Nik66"
+        SAVE_ID = "Sunrises24BotUpdates"
         DATA = eval(get_mongo_data(MONGODB_URI, NAME, SAVE_ID, COLLECTION_NAME))
     else:
         LOGGER.info("🔶Not Using MongoDB Database")
