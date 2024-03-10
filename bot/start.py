@@ -195,7 +195,7 @@ def get_username(event):
 ###############------Check_Auth_User------###############
 def user_auth_checker(event):
     if event.is_private:
-        if event.message.sender.id == owner_id:
+        if event.message.sender.id == owner_id or event.chat.id == auth_chat:
             return True
     else:
         if event.message.sender.id in sudo_users or event.message.sender.id in allowed_chats or event.message.sender.id == owner_id or event.chat.id == auth_chat:
