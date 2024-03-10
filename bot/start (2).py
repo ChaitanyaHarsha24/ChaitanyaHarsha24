@@ -716,10 +716,10 @@ async def _speed_test(event):
 ###############------Start_Message------###############
 @TELETHON_CLIENT.on(events.NewMessage(incoming=True, pattern='/start'))
 async def _startmsg(event):
-    text = f"Hi {get_mention(event)}, I Am Alive."
+    text = f"Hi {get_mention(event)}, I Am Alive❤️."
     await event.reply(text, buttons=[
-    [Button.url('⭐ Bot By 𝚂𝚊𝚑𝚒𝚕 ⭐', 'https://t.me/nik66')],
-    [Button.url('❤ Join Channel ❤', 'https://t.me/nik66x')]
+    [Button.url('Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻', 'https://t.me/Sunrises_24')],
+    [Button.url('Uᴘᴅᴀᴛᴇꜱ 📢', 'https://t.me/Sunrises24BotUpdates')]
 ])
     return
 
@@ -1525,7 +1525,7 @@ async def _change_metadata(event):
                 link = await get_url_from_message(new_event)
             else:
                 return
-        metadata_event = await ask_text_event(chat_id, user_id, event, 120, "Send MetaData", message_hint="🔷`a` Is For Audio & `s` Is For Subtitle\n🔷 Send In The Format As Shown Below:\n\n`a:0-AudioLanguage-AudioTitle` (To Change Audio Number 1 Metadata)\n`s:0-SubLanguage-SubTitle` (To Change Subtitle Number 1 Metadata)\n\ne.g. `a:1-eng-nik66bots` (To Change Audio Number 2 Metadata)")
+        metadata_event = await ask_text_event(chat_id, user_id, event, 120, "Send MetaData", message_hint="🔷`a` Is For Audio & `s` Is For Subtitle\n🔷 Send In The Format As Shown Below:\n\n`a:0-AudioLanguage-AudioTitle` (To Change Audio Number 1 Metadata)\n`s:0-SubLanguage-SubTitle` (To Change Subtitle Number 1 Metadata)\n\ne.g. `a:1-TELUGU-Sunrises24Rips` (To Change Audio Number 2 Metadata)")
         if not metadata_event:
             return
         custom_metadata_list = str(metadata_event.message.message).split('\n')
