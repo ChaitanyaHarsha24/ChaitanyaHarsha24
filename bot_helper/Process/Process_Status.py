@@ -27,7 +27,7 @@ LOGGER = Config.LOGGER
 FINISHED_PROGRESS_STR = Config.FINISHED_PROGRESS_STR
 UNFINISHED_PROGRESS_STR = Config.UNFINISHED_PROGRESS_STR
 download_dir = Config.DOWNLOAD_DIR
-ws_name = {'5:5': 'Top Left', 'main_w-overlay_w-5:5': 'Top Right', '5:main_h-overlay_h': 'Bottom Left', 'main_w-overlay_w-5:main_h-overlay_h-5': 'Bottom Right'}
+ws_name = {'5:5': 'Top Left','main_w-overlay_w-2:5' : 'Top Middle', 'main_w-overlay_w-5:5': 'Top Right', '5:main_h-overlay_h': 'Bottom Left', 'main_w-overlay_w-5:main_h-overlay_h-5': 'Bottom Right'}
 
 async def get_ffmpeg_process_line(proc):
         data = False
