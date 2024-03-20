@@ -23,16 +23,12 @@ def create_direc(direc):
     return
 
 async def check_size_limit():
-    size = 2097151000
-    try:
+        size = 2097151000
         if Telegram.TELETHON_USER_CLIENT:
-            user = await Telegram.TELETHON_USER_CLIENT.get_me()
-            if user.premium:
-                size = 4194304000
-    except Exception as e:
-        print(f"Error: {e}")
-
-    return size
+                user = await Telegram.TELETHON_USER_CLIENT.get_me()
+                if user.premium:
+                    size = 4194304000
+        return size
 
 async def get_split_size(user_id):
     if get_data()[user_id]['upload_tg']:
