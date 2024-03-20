@@ -29,7 +29,7 @@ async def check_size_limit():
                 user = await Telegram.TELETHON_USER_CLIENT.get_me()
                 if user.premium:
                     return size_premium                   
-        return size
+        return size_normal
 
 async def get_split_size(user_id):
     if get_data()[user_id]['upload_tg']:
