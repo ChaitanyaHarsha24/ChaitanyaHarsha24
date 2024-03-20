@@ -27,7 +27,7 @@ async def check_size_limit():
         if Telegram.TELETHON_USER_CLIENT:
                 user = await Telegram.TELETHON_USER_CLIENT.get_me()
                 if user.premium:
-                    size = 4294967295
+                    size = 4194304000
         return size
 
 async def get_split_size(user_id):
