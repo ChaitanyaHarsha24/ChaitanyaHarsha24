@@ -83,8 +83,8 @@ class Config:
     API_HASH = environ.get("API_HASH","")
     TOKEN = environ.get("TOKEN","")
     USE_PYROGRAM = True
-    USE_SESSION_STRING = environ.get("USE_SESSION_STRING", True)
-    SESSION_STRING = environ.get("SESSION_STRING","1BVtsOLMBu286x1hrFMh_l6c9MEOc9t9Ee-44hpUR-5S6iL8eu9ELVfB4Javd0khwGVRaxNgNlM3olxKn_NnmtKLx7zeo6YrRJH5q9UhTYy6dvf1oSbxbLPM9jho9VeMC3Iz2C5hA-7zi3D9QIvJlAMLeGfNXqHHb7kJg8OBGo0av1X-K7u-LZqNEqRyceZzrjivNTk06I7zONDR47f75e33lvw5LwbW2mOjA4miGtWplFuSOqjhIAGlY0KDJ-7soIAJR8-gthFp5zn0DUXwdyw-kOlUf4QqyI7GWHy_HP4oHRmfWuxQgY_ygCsyqKoCDnMBfnputifUPhLyiAHRRtj5ay3cRTts=")
+    USE_SESSION_STRING = environ.get("USE_SESSION_STRING", False)
+    SESSION_STRING = environ.get("SESSION_STRING","")
     RUNNING_TASK_LIMIT = int(environ.get("RUNNING_TASK_LIMIT",""))
     AUTO_SET_BOT_CMDS = eval(environ.get("AUTO_SET_BOT_CMDS","False"))
     HEROKU_APP_NAME = environ.get("HEROKU_APP_NAME", False)
